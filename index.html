@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Old School Motorcycle | BSA Bantam D1</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&family=Leckerli+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600&family=Leckerli+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -30,8 +32,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
+  <header>
+    <div class="container">
       <div class="logo">
         <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" id="motorcycle-icon">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -71,8 +73,20 @@
           <li class="icon"><a href="#"><i class="fa-solid fa-user"></i></a></li>
         </menu>
       </div>
-    </header>
+      <div class="mobile-nav">
+        <input type="checkbox" id="mobile-menu">
+        <label for="mobile-menu"><span></span><span></span><span></span></label>
+        <menu class="mobile-nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Vehicles</a></li>
+          <li><a href="#">Who are we?</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </menu>
+      </div>
+    </div>
+  </header>
 
+  <div class="container">
     <div class="breadcrumb">
       <p><a href="">Home</a> > <a href="">Vehicles</a> > <span class="active-link"><a href="">BSA Bantam D1</a></span></p>
     </div>
@@ -81,9 +95,9 @@
       <h1>BSA Bantam D1</h1>
 
       <div class="product_images">
-        <img src="/resources/imgs/1951-bsa-bantam-d1-rigid-125cc-in-trials-trim-v5c-amp-taxed-3.jpg" alt="black bsa bantam d1 motorcycle" class="main-img">
-        <aside class="thumbnails"><img src="/resources/imgs/1951-bsa-bantam-d1-rigid-125cc-in-trials-trim-v5c-amp-taxed-3.jpg" alt="black bsa bantam d1 motorcycle"
-            class="thumbnail active"><img src="/resources/imgs/BSA-Bantam-D1-1949-800x615.jpg" alt="red bsa bantam d1 motorcycle" class="thumbnail"></aside>
+        <img src="./resources/imgs/1951-bsa-bantam-d1-rigid-125cc-in-trials-trim-v5c-amp-taxed-3.jpg" alt="black bsa bantam d1 motorcycle" class="main-img">
+        <aside class="thumbnails"><img src="./resources/imgs/1951-bsa-bantam-d1-rigid-125cc-in-trials-trim-v5c-amp-taxed-3.jpg" alt="black bsa bantam d1 motorcycle"
+            class="thumbnail active"><img src="./resources/imgs/BSA-Bantam-D1-1949-800x615.jpg" alt="red bsa bantam d1 motorcycle" class="thumbnail"></aside>
       </div>
       <div class="product_info_container">
         <div class="product_description">
@@ -97,10 +111,12 @@
             <p>Pick your color:</p>
             <div class="color green"></div>
             <div class="color black"></div>
-            <div class="color red"></div>
+            <!-- <div class="color red"></div> -->
           </div>
-          <p class="product_price">£1599.00</p>
-          <button type="submit" id="add-btn">add to cart</button>
+          <div class="product_buy-infos">
+            <p class="product_price">£ 1599.00</p>
+            <button type="submit" id="add-btn">add to cart</button>
+          </div>
         </div>
       </div>
       <div class="product_tech">
@@ -114,7 +130,7 @@
             <td>Great Britain</td>
           </tr>
           <tr>
-            <td>Capcity:</td>
+            <td>Capacity:</td>
             <td>123cc</td>
           </tr>
           <tr>
